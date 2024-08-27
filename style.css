@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#gameArea {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('tausta.png'); /* Taustakuva */
+    background-size: cover; /* Skaalaa kuva täyttämään pelialue */
+    background-repeat: no-repeat; /* Estää taustakuvan toistumisen */
+    background-position: center; /* Keskittää taustakuvan */
+    background-color: #f0f0f0;
+}
+
+#teacher {
+    width: 70px; /* Suurennetaan opettajan leveys */
+    height: 120px; /* Suurennetaan opettajan korkeus */
+    background-image: url('teacher.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 10px; /* Nostetaan opettajaa hieman pelialueen alareunasta */
+    left: 50px;
+    border-radius: 10%;
+}
+
+.enemy {
+    width: 50px; /* Pienennetään oppilaiden leveys */
+    height: 80px; /* Pienennetään oppilaiden korkeus */
+    background-image: url('student.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0px; /* Oppilas siirretty pelialueen alareunaan */
+    border-radius: 10%; /* Pyöristetyt kulmat */
+}
+
+#score {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#highScores {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#highScores li {
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
